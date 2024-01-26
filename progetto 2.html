@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top 10 Anime</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-focus-in">Top Anime Preferiti</h1>
+      <hr />
+      <h2>Spero che possiate concordare con questa classifica personale</h2>
+      <ol>
+        <li class="anime-card" id="attackOnTitanCard">
+          <h2>Attack on titan</h2>
+          <div class="cube-container" id="cubeContainer">
+            <div class="cube">
+              <div class="face front"></div>
+              <div class="face back"></div>
+              <div class="face right"></div>
+              <div class="face left"></div>
+              <div class="face top"></div>
+              <div class="face bottom"></div>
+            </div>
+          </div>
+          <p style="width: 170px">
+            Attack on Titan è un anime che mi ha preso moltissimo a livello
+            esistenziale e mi ha fatto capire molti valori importantissimi nella
+            vita come ad esempio il valore del sacrificio e della realtà.
+          </p>
+          <a
+            href="https://www.google.com/search?client=opera-gx&hs=7ld&sca_esv=600400644&sxsrf=ACQVn0_2NFXAatRn9_v4gJbS4QM_BcCBhw:1705928947050&q=attack+on+titan+image&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjriJrHiPGDAxWj_7sIHQ7RCWAQ0pQJegQIDRAB&biw=1879&bih=962&dpr=1#imgrc=gOU7X-wMSksc_M&imgdii=twfETMa_63hfjM"
+            >Trovi qui tutte le immagini inerenti</a
+          >
+        </li>
+      </ol>
+    </div>
+
+    <script>
+      const attackOnTitanCard = document.getElementById("attackOnTitanCard");
+      const cubeContainer = document.getElementById("cubeContainer");
+
+      attackOnTitanCard.addEventListener("mouseover", () => {
+        cubeContainer.style.display = "block";
+      });
+
+      attackOnTitanCard.addEventListener("mouseout", () => {
+        cubeContainer.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
